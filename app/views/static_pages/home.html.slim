@@ -1,0 +1,208 @@
+main.mine-home
+  = image_tag("ellipse/ellipse_top_left.svg", :alt => "blue ellips", :class =>"ellipse-top-left")
+  section.home-intro
+    = image_tag("vector_intro_bottom.svg", :class =>"vector-intro")
+
+    .wrapper
+      .home-intro-block
+        .home-intro-describe
+          .home-intro-title-wrap
+            h2.home-intro-title
+              | Ми піклуємося про вас і вашу дитину!
+          .home-intro-text
+            | Разом з нашими експертами ми розробили додаток,
+              що допоможе зробити догляд за дитиною більш
+              якісним, легшим і медично обгрунтованим.
+          .home-intro-app-link
+            = image_tag("icons/app-store-icon.svg", :alt => "app store butoon link", :class =>"app-store-button")
+            = image_tag("icons/playmarket-icon.svg", :alt => "play market butoon link", :class =>"playmarket-button")
+
+        .home-intro-app-img
+          = image_tag("intro_app_img.png", :alt => "app image", :class =>"intro-app-img")
+
+        = image_tag("ellipse/ellipse_intro_left.svg", :class =>"ellipse-intro-left")
+        = image_tag("ellipse/ellipse_intro_center.svg", :class =>"ellipse-intro-center")
+        = image_tag("ellipse/ellipse_intro_right.svg", :class =>"ellipse-intro-right")
+
+  section.home-about
+
+    .wrapper
+      .about-content
+
+        .about-description
+          h3.about-description-title
+            | Про нас
+          p.about-description-text
+            | Маля і Ви розроблено за підтримки UNICEF. Ми провели опитування серед батьків і знаємо, що вас турбує.
+          p.about-description-text
+            | Ми тут, щоб супроводжувати і підтримувати вас на кожному етапі життя вашого малюка.
+
+        .about-cards
+          .about-card-item
+            = image_tag("icons/card-item-1", :class =>"card-item-icon")
+            h4.card-item-title
+              | Від 0 до 5 років
+            p.card-item-text
+              | Ми з вами пройдемо усі ключові етапи з дитиною від народження до першого класу
+
+          .about-card-item
+            = image_tag("icons/card-item-2", :class =>"card-item-icon")
+            h4.card-item-title
+              | Доказова медицина
+            p.card-item-text
+              | Єдине джерело медично- обгрунтованої інформації від наших експертів
+
+          .about-card-item
+            = image_tag("icons/card-item-3", :class =>"card-item-icon")
+            h4.card-item-title
+              | Персоналізовані поради
+            p.card-item-text
+             | У нашому додатку ви отримаєте персоналізовану інформацію по догляду за вашою дитиною
+
+          .about-card-item
+            = image_tag("icons/card-item-4", :class =>"card-item-icon")
+            h4.card-item-title
+              | Норми і показники
+            p.card-item-text
+              | Відслідковуйте норми і параметри вашої дитини і отримуйте поради (годування, розвиток, вакцинація)
+
+  section.home-advices
+    = image_tag("vector_about_top.svg", :class =>"vector-about")
+
+    .wrapper
+      .advices-content
+        = image_tag("ellipse/ellipse_advices_right.svg", :class =>"ellipse-advices-right")
+        = image_tag("ellipse/ellipse_advices_small.svg", :class =>"ellipse-advices-small")
+
+        .advices-description
+          h3.advices-description-title
+            | Поради
+          p.advices-description-text
+            | Виберіть категорію, щоб починати статті за темою
+
+        .advices-cards
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-1.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Перший досвід
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-2.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Екстрене
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-3.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Розвиток дитини
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-4.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Здоров'я
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-5.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Здоров'я матері
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-6.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Годування
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-7.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Безпека
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-8.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Активності з дитиною
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-9.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Життя батьків
+
+          = link_to  "#", class: "advices-card-item"
+            .advices-card-icon
+              = image_tag("icons/advices-icon-10.svg", :class =>"card-item-icon")
+            .advices-card-title
+              | Додатково
+
+
+
+  section.home-articles
+    .wrapper
+      .articles-content
+        = image_tag("ellipse/ellipse_articles_left.svg", :class =>"ellipse-articles-left")
+        = image_tag("ellipse/ellipse_articles_left_small.svg", :class =>"ellipse-articles-left-small")
+
+        .articles-description
+          h3.articles-description-title
+            | Рекомендовані статті
+          p.articles-description-text
+            | Виберіть категорію, щоб починати статті за темою
+
+        .articles-cards
+          = link_to  "#", class: "articles-card-item"
+            .articles-card-img
+              = image_tag("article/article_1.png", :class =>"article-card-img")
+            .articles-card-text
+              .advices-card-small-text
+                | Сон • 5 хвилин
+              .advices-card-title
+                | Як виробити режим <br> сну у дитини
+              .advices-card-link
+                | Читати більше
+                = image_tag("icons/arrow.svg", :class =>"arrow-icon")
+
+          = link_to  "#", class: "articles-card-item"
+            .articles-card-img
+              = image_tag("article/article_2.png", :class =>"article-card-img")
+            .articles-card-text
+              .advices-card-small-text
+                | Перший досвід • 5 хвилин
+              .advices-card-title
+                | Чого очікувати у перші тижні з дитиною
+              .advices-card-link
+                | Читати більше
+                = image_tag("icons/arrow.svg", :class =>"arrow-icon")
+
+          = link_to  "#", class: "articles-card-item"
+            .articles-card-img
+              = image_tag("article/article_3.png", :class =>"article-card-img")
+            .articles-card-text
+              .advices-card-small-text
+                | Розвиток дитини • 5 хвилин
+              .advices-card-title
+                | Як зрозуміти що ваша дитина правильно роз...
+              .advices-card-link
+                | Читати більше
+                = image_tag("icons/arrow.svg", :class =>"arrow-icon")
+
+          = link_to  "#", class: "articles-card-item"
+            .articles-card-img
+              = image_tag("article/article_4.png", :class =>"article-card-img")
+            .articles-card-text
+              .advices-card-small-text
+                | Сон • 5 хвилин
+              .advices-card-title
+                | 10 причин чому ваша дитина погано спить
+              .advices-card-link
+                | Читати більше
+                = image_tag("icons/arrow.svg", :class =>"arrow-icon")
+
+        .articles-button
+          = link_to  "Переглянути всі статті", "#", class: "articles-button-link"

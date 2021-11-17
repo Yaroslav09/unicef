@@ -1,0 +1,37 @@
+footer.footer
+  .footer-content
+    .wrapper
+      .footer-content-app
+        .footer-app-img-wrap
+          = image_tag("footer_app_img.png", :alt => "app image", :class =>"footer-app-img")
+
+        .footer-app-describe
+          h2.footer-app-describe-title
+            | Все в єдиному додатку
+          .footer-app-describe-text
+            | Більше не потрібно різних трекерів, табличок з нормами і сотні книжок. Ми зібрали все що вам потрібно в одному додатку
+          .footer-app-describe-link
+            = image_tag("icons/app-store-icon.svg", :alt => "app store butoon link", :class =>"app-store-button")
+            = image_tag("icons/playmarket-icon.svg", :alt => "play market butoon link", :class =>"playmarket-button")
+
+
+  .footer-content-bottom
+    .wrapper
+      .footer-content-bottom-items
+        .footer-bottom-logo
+          .footer-bottom-logo-icon
+            = image_tag("icons/heart.svg", :alt => "red heart image", :class =>"header-logo-icon")
+          h1.footer-bottom-logo-title
+            | МАЛЯ І ВИ
+        .footer-bottom-logo-unicef
+          = image_tag("icons/unicef-logo.svg", :alt => "unicef logo", :class =>"unicef-logo-icon")
+        .footer-bottom-social-link
+          = image_tag("icons/facebook-icon.svg", :alt => "facebook link", :class =>"facebook-icon")
+          = image_tag("icons/insta-icon.svg", :alt => "instagram link", :class =>"insta-icon insta-icon-wrap")
+          = image_tag("icons/telegram-icon.svg", :alt => "telegram link", :class =>"telegram-icon")
+        .footer-bottom-logo-softserve
+          = image_tag("icons/softserve-logo.svg", :alt => "softserve logo", :class =>"softserve-logo-icon")
+
+      .copyright
+        p.copyright-text
+          | © 2021 Маля і Ви. Всі права захищено

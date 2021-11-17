@@ -1,0 +1,255 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  background-image: url(footer_bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 933px;
+
+  @media (max-width: 1180px) {
+    min-height: 750px;
+  }
+  @media (max-width: 979px) {
+    min-height: 550px;
+  }
+
+  .footer-content {
+    width: 100%;
+    min-height: 794px;
+
+    @media (max-width: 1180px) {
+      min-height: 650px;
+    }
+    @media (max-width: 979px) {
+      min-height: 430px;
+    }
+
+    .footer-content-app {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 740px) {
+        flex-direction: column;
+      }
+
+      .footer-app-img {
+        margin-top: 44px;
+        margin-left: -80px;
+
+        @media (max-width: 1180px) {
+          width: 100%;
+          margin-top: 30px;
+          margin-left: -60px;
+          width: 700px;
+        }
+        @media (max-width: 1080px) {
+          width: 590px;
+        }
+        @media (max-width: 979px) {
+          width: 460px;
+        }
+        @media (max-width: 740px) {
+          width: 360px;
+          margin-top: 10px;
+          margin-left: 0px;
+        }
+        @media (max-width: 360px) {
+          width: 340px;
+        }
+      }
+
+      .footer-app-describe {
+        width: 100%;
+        margin-top: 80px;
+        margin-left: 30px;
+
+        @media (max-width: 979px) {
+          margin-top: 40px;
+        }
+        @media (max-width: 740px) {
+          text-align: center;
+          margin-top: 4px;
+          margin-left: 0px;
+        }
+
+        .footer-app-describe-title {
+          max-width: 322px;
+          font-size: 40px;
+          font-weight: 800;
+          line-height: 54px;
+          color: #1cabe2;
+
+          @media (max-width: 979px) {
+            font-size: 30px;
+            line-height: 34px;
+          }
+          @media (max-width: 740px) {
+            max-width: 100%;
+          }
+        }
+
+        .footer-app-describe-text {
+          max-width: 410px;
+          color: #2d2926;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          margin-bottom: 40px;
+          margin-top: 24px;
+
+          @media (max-width: 979px) {
+            margin-bottom: 20px;
+          }
+          @media (max-width: 740px) {
+            max-width: 100%;
+          }
+        }
+
+        .footer-app-describe-link {
+          @media (max-width: 740px) {
+            margin-bottom: 15px;
+          }
+
+          .app-store-button {
+            margin-right: 16px;
+            cursor: pointer;
+
+            @media (max-width: 804px) {
+              margin: 0px 4px;
+              height: 40px;
+            }
+          }
+          .playmarket-button {
+            cursor: pointer;
+
+            @media (max-width: 804px) {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-content-bottom {
+    width: 100%;
+    min-height: 139px;
+    border-top: 1px solid #1cabe2;
+
+    @media (max-width: 740px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-content-bottom-items {
+      position: relative;
+      top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+
+      @media (max-width: 740px) {
+        flex-direction: column;
+        min-height: 240px;
+        justify-content: center;
+        top: 0px;
+      }
+
+      .footer-bottom-logo {
+        cursor: pointer;
+
+        .footer-bottom-logo-icon {
+          position: absolute;
+          top: 0;
+          margin-left: 148px;
+
+          @media (max-width: 979px) {
+            margin-left: 105px;
+          }
+        }
+        .footer-bottom-logo-title {
+          position: relative;
+          font-family: "Rubik One";
+          font-size: 32px;
+          line-height: 40px;
+          letter-spacing: 7.25px;
+          color: #1cabe2;
+
+          @media (max-width: 979px) {
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 3px;
+          }
+          @media (max-width: 740px) {
+            margin-top: 6px;
+          }
+        }
+      }
+
+      .footer-bottom-logo-unicef {
+        position: relative;
+        margin-right: 84px;
+        cursor: pointer;
+
+        @media (max-width: 979px) {
+          margin-right: 20px;
+        }
+        @media (max-width: 740px) {
+          margin: 20px 0px 20px 0px;
+        }
+
+        .unicef-logo-icon {
+          @media (max-width: 740px) {
+            height: 30px;
+          }
+        }
+      }
+
+      .footer-bottom-social-link {
+        margin-right: 22px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @media (max-width: 740px) {
+          margin-right: 0px;
+        }
+
+        .insta-icon-wrap {
+          padding: 0px 38px;
+          cursor: pointer;
+
+          @media (max-width: 979px) {
+            padding: 20px;
+          }
+          @media (max-width: 740px) {
+            padding: 0px 15px;
+          }
+        }
+      }
+
+      .softserve-logo-icon {
+        cursor: pointer;
+
+        @media (max-width: 740px) {
+          height: 24px;
+          margin: 20px 0px 15px 0px;
+        }
+      }
+    }
+
+    .copyright {
+      position: relative;
+      margin: 20px 0px;
+
+      @media (max-width: 740px) {
+        margin: 15px 0px;
+        text-align: center;
+      }
+    }
+  }
+}

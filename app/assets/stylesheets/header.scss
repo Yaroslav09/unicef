@@ -1,0 +1,115 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: 104px;
+  top: 0;
+  left: 0;
+  background: none;
+  z-index: 10;
+
+  @media (max-width: 789px) {
+    height: 90px;
+  }
+
+  .wrapper {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .header-items {
+      position: relative;
+      height: 104px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 789px) {
+        height: 90px;
+      }
+
+      .header-logo {
+        position: relative;
+        height: 76px;
+
+        .header-logo-title {
+          position: relative;
+          font-family: "Rubik One";
+          font-size: 32px;
+          line-height: 28px;
+          letter-spacing: 7.25px;
+          color: #1cabe2;
+          margin-bottom: 12px;
+
+          @media (max-width: 1280px) {
+            font-size: 28px;
+            letter-spacing: 4px;
+            margin-bottom: 6px;
+          }
+          @media (max-width: 432px) {
+            font-size: 27px;
+            letter-spacing: 3px;
+          }
+        }
+
+        .header-logo-icon {
+          position: relative;
+          margin-left: 148px;
+          padding-top: 12px;
+
+          @media (max-width: 1280px) {
+            margin-left: 117px;
+          }
+          @media (max-width: 432px) {
+            margin-left: 109px;
+          }
+        }
+
+        .header-logo-text {
+          position: relative;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.25px;
+          color: #1cabe2;
+        }
+      }
+      .nav {
+        .nav-items {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .nav-item {
+            .link-item {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 22px;
+              color: #1cabe2;
+              opacity: 0.8;
+              margin: 0px 32px;
+
+              @media (max-width: 992px) {
+                margin: 0px 24px;
+              }
+              @media (max-width: 789px) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .header-search {
+        margin-left: 84px;
+
+        @media (max-width: 992px) {
+          margin-left: 60px;
+        }
+        @media (max-width: 789px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

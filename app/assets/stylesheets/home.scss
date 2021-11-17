@@ -1,0 +1,549 @@
+.mine-home {
+  position: relative;
+  .ellipse-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 789px) {
+      max-width: 244px;
+    }
+  }
+
+  .home-intro {
+    position: relative;
+    height: 762px;
+    background-color: #fafafa;
+
+    @media (max-width: 789px) {
+      min-height: 600px;
+    }
+  }
+
+  .home-intro-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 762px;
+
+    @media (max-width: 789px) {
+      min-height: 600px;
+    }
+    @media (max-width: 740px) {
+      flex-direction: column-reverse;
+    }
+
+    .home-intro-describe {
+      width: 100%;
+      padding: 8px 0px 0px 2px;
+
+      @media (max-width: 789px) {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      @media (max-width: 740px) {
+        margin-top: 0px;
+        margin: 60px;
+        width: 98%;
+      }
+      @media (max-width: 360px) {
+        margin: 0px;
+        width: 98%;
+      }
+
+      .home-intro-title-wrap {
+        max-width: 496px;
+        margin-bottom: 24px;
+
+        @media (max-width: 789px) {
+          max-width: 100%;
+        }
+
+        .home-intro-title {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 53px;
+          color: #1cabe2;
+          opacity: 0.8;
+
+          @media (max-width: 992px) {
+            font-size: 34px;
+            line-height: 44px;
+          }
+          @media (max-width: 789px) {
+            text-align: center;
+            line-height: 38px;
+          }
+          @media (max-width: 510px) {
+            font-size: 28px;
+            line-height: 32px;
+          }
+        }
+      }
+
+      .home-intro-text {
+        max-width: 416px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #2d2926;
+
+        @media (max-width: 789px) {
+          max-width: 100%;
+        }
+        @media (max-width: 510px) {
+          text-align: center;
+        }
+      }
+
+      .home-intro-app-link {
+        position: relative;
+        margin-top: 34px;
+
+        @media (max-width: 789px) {
+          text-align: center;
+          margin-top: 18px;
+        }
+
+        img {
+          padding: 8px 16px 8px 0px;
+
+          @media (max-width: 789px) {
+            padding: 5px;
+            height: 54px;
+          }
+          @media (max-width: 432px) {
+            padding: 5px;
+            height: 50px;
+          }
+          @media (max-width: 370px) {
+            padding: 2px;
+            height: 46px;
+          }
+        }
+      }
+    }
+
+    .home-intro-app-img {
+      position: relative;
+      width: 100%;
+
+      @media (max-width: 740px) {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      img {
+        position: relative;
+        top: 56px;
+        right: -120px;
+
+        @media (max-width: 1280px) {
+          width: 500px;
+          right: 0;
+        }
+        @media (max-width: 992px) {
+          width: 400px;
+        }
+        @media (max-width: 789px) {
+          width: 360px;
+          right: -30px;
+        }
+        @media (max-width: 740px) {
+          width: 300px;
+          top: 0px;
+          right: 0px;
+          margin-bottom: -40px;
+        }
+        @media (max-width: 540px) {
+          width: 260px;
+          margin-bottom: -50px;
+        }
+      }
+    }
+  }
+  // ==========================================================
+  .home-about {
+    position: relative;
+    background-color: #e8f7fc;
+    width: 100%;
+    min-height: 442px;
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+
+      .about-description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        @media (max-width: 1280px) {
+          margin-bottom: 40px;
+        }
+        @media (max-width: 992px) {
+          margin-bottom: 30px;
+          align-items: center;
+        }
+
+        .about-description-title {
+          color: #2d2926;
+          font-size: 32px;
+          font-weight: 800;
+          padding: 6px 0px;
+        }
+        .about-description-text {
+          color: #777779;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+
+          @media (max-width: 992px) {
+            text-align: center;
+          }
+        }
+      }
+
+      .about-cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width: 1280px) {
+          display: flex;
+          justify-content: center;
+        }
+        @media (max-width: 992px) {
+          justify-content: space-around;
+        }
+
+        .about-card-item {
+          width: 261px;
+          margin-right: 66px;
+
+          @media (max-width: 1291px) {
+            margin-right: 55px;
+          }
+          @media (max-width: 1280px) {
+            margin-bottom: 20px;
+          }
+          @media (max-width: 992px) {
+            margin-bottom: 15px;
+          }
+          @media (max-width: 670px) {
+            width: 90%;
+            padding: 10px 5px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+          }
+          @media (max-width: 480px) {
+            width: 98%;
+          }
+
+          .card-item-title {
+            color: #2d2926;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            padding: 16px 0px 10px 0px;
+
+            @media (max-width: 1280px) {
+              padding-top: 10px;
+            }
+          }
+          .card-item-text {
+            color: #777779;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+        .about-card-item:last-child {
+          width: 273px;
+          margin-right: 20px;
+
+          @media (max-width: 1291px) {
+            margin-right: 42px;
+          }
+          @media (max-width: 670px) {
+            width: 90%;
+            padding: 10px 5px;
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+  // ================================================================================
+  .home-advices {
+    position: relative;
+    width: 100%;
+    min-height: 714px;
+    background-color: #fafafa;
+
+    .advices-content {
+      position: relative;
+      top: 144px;
+
+      @media (max-width: 1271px) {
+        top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .advices-description {
+        margin-bottom: 58px;
+
+        @media (max-width: 1280px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 1009px) {
+          text-align: center;
+        }
+
+        .advices-description-title {
+          color: #2d2926;
+          font-size: 32px;
+          font-weight: 800;
+          padding-bottom: 8px;
+        }
+        .advices-description-text {
+          color: #777779;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .advices-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (max-width: 1271px) {
+          justify-content: space-evenly;
+        }
+
+        .advices-card-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 237px;
+          min-height: 181px;
+          background-color: #fff;
+          box-shadow: 0px 2px 12px rgba(119, 119, 121, 0.08);
+          margin: 5px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+
+          .advices-card-title {
+            width: 153px;
+            font-weight: 700;
+            font-size: 14px;
+            color: #2d2926;
+            text-align: center;
+            letter-spacing: 0.1px;
+          }
+        }
+      }
+    }
+  }
+  // ==================================================================
+  .home-articles {
+    width: 100%;
+    min-height: 678px;
+    background-color: #fafafa;
+
+    @media (max-width: 1271px) {
+      padding-bottom: 60px;
+    }
+
+    .articles-content {
+      position: relative;
+      top: 30px;
+
+      @media (max-width: 721px) {
+        top: 15px;
+      }
+
+      .articles-description {
+        margin-bottom: 64px;
+
+        @media (max-width: 1271px) {
+          margin-bottom: 30px;
+        }
+        @media (max-width: 1063px) {
+          text-align: center;
+        }
+        @media (max-width: 721px) {
+          margin-bottom: 15px;
+        }
+
+        .articles-description-title {
+          color: #2d2926;
+          font-size: 32px;
+          font-weight: 800;
+          padding-bottom: 4px;
+
+          @media (max-width: 721px) {
+            font-size: 28px;
+            padding-bottom: 2px;
+          }
+        }
+        .articles-description-text {
+          color: #777779;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .articles-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width: 1271px) {
+          justify-content: space-evenly;
+        }
+
+        .articles-card-item {
+          position: relative;
+          display: block;
+          width: 302px;
+          box-shadow: 0px 2px 12px rgba(119, 119, 121, 0.08);
+          border-radius: 8px;
+          background-color: #fff;
+
+          @media (max-width: 1271px) {
+            margin: 5px 20px 10px 20px;
+          }
+          @media (max-width: 721px) {
+            margin: 5px 5px 10px 5px;
+          }
+          @media (max-width: 320px) {
+            width: 260px;
+          }
+
+          .article-card-img {
+            width: 100%;
+          }
+
+          .articles-card-text {
+            margin-top: 18px;
+            padding-left: 24px;
+            padding-right: 13px;
+
+            .advices-card-small-text {
+              color: #777779;
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 1.5px;
+              font-weight: 400;
+            }
+            .advices-card-title {
+              font-size: 20px;
+              font-weight: 700;
+              color: #2d2926;
+              line-height: 23px;
+              letter-spacing: 0.15px;
+              padding: 8px 0px 20px 0px;
+            }
+
+            .advices-card-link {
+              color: #1cabe2;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.4px;
+              padding: 8px 0px 20px 0px;
+              img {
+                margin-left: 19px;
+              }
+            }
+          }
+        }
+      }
+
+      .articles-button {
+        position: relative;
+        background-color: #1cabe2;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        max-width: 343px;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin: 0 auto;
+        padding: 12px 0px;
+        text-align: center;
+        margin-top: 72px;
+
+        @media (max-width: 1271px) {
+          margin-top: 30px;
+        }
+        @media (max-width: 721px) {
+          margin-top: 15px;
+        }
+
+        .articles-button-link {
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1.25px;
+          text-transform: uppercase;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.ellipse-intro-left {
+  position: absolute;
+  top: 42%;
+  left: 9%;
+}
+.ellipse-intro-center {
+  position: absolute;
+  bottom: 19%;
+  right: 34%;
+}
+.ellipse-intro-right {
+  position: absolute;
+  top: 19%;
+  right: 1%;
+}
+// ======================
+
+.ellipse-advices-right {
+  position: absolute;
+  top: -25%;
+  right: 13%;
+}
+.ellipse-advices-small {
+  position: absolute;
+  top: -33%;
+  right: 22%;
+}
+// ============================
+
+.ellipse-articles-left {
+  position: absolute;
+  top: -6%;
+  left: 3.4%;
+}
+
+.ellipse-articles-left-small {
+  position: absolute;
+  top: 10.6%;
+  left: 22.2%;
+}
+
+.vector-intro {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+.vector-about {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
