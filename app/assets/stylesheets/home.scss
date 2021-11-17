@@ -542,8 +542,11 @@
   width: 100%;
   bottom: -1px;
 }
-.vector-about {
+
+.vector-about-r {
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   position: absolute;
   width: 100%;
-  top: 0px;
+  top: 0;
 }
