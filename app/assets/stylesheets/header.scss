@@ -30,6 +30,7 @@
       .header-logo {
         position: relative;
         height: 76px;
+        z-index: 10;
 
         .header-logo-title {
           position: relative;
@@ -73,41 +74,142 @@
           color: #1cabe2;
         }
       }
-      .nav {
-        .nav-items {
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
 
-          .nav-item {
-            .link-item {
-              font-weight: 700;
-              font-size: 16px;
-              line-height: 22px;
-              color: #1cabe2;
-              opacity: 0.8;
-              margin: 0px 32px;
+      .header-memu {
+        display: flex;
+
+        @media (max-width: 765px) {
+          flex-direction: column;
+        }
+
+        .menu-icon {
+          display: none;
+
+          @media (max-width: 765px) {
+            z-index: 5;
+            display: block;
+            position: relative;
+            width: 36px;
+            height: 22px;
+            cursor: pointer;
+
+            span,
+            &::before,
+            &::after {
+              left: 0;
+              position: absolute;
+              width: 100%;
+              height: 14%;
+              transition: all 0.3s ease 0s;
+              background-color: #bee9fa;
+            }
+            &::before,
+            &::after {
+              content: "";
+            }
+            &::before {
+              top: 0;
+            }
+            &::after {
+              bottom: 0;
+            }
+            span {
+              top: 50%;
+              transform: scale(1) translate(0px, -50%);
+            }
+          }
+        }
+
+        .menu-body {
+          display: flex;
+
+          @media (max-width: 765px) {
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 100px 30px 30px 30px;
+            transition: left 0.3s ease 0s;
+            overflow: auto;
+
+            // &::before {
+            //   content: "";
+            //   position: fixed;
+            //   width: 100%;
+            //   top: 0;
+            //   left: 0;
+            //   height: 100px;
+            //   background-color: rgba(0, 0, 0, 0.2);
+            //   z-index: 2;
+            // }
+          }
+
+          .nav {
+            .nav-items {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              @media (max-width: 765px) {
+                flex-direction: column;
+                margin-top: 20px;
+              }
+              .nav-item {
+                @media (max-width: 765px) {
+                  padding: 14px 0px;
+                }
+                .link-item {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 22px;
+                  color: #1cabe2;
+                  opacity: 0.8;
+                  margin: 0px 32px;
+
+                  @media (max-width: 992px) {
+                    margin: 0px 20px;
+                  }
+                  @media (max-width: 789px) {
+                    margin: 0px 16px;
+                  }
+                  @media (max-width: 765px) {
+                    font-size: 26px;
+                  }
+                }
+              }
+            }
+          }
+
+          .search {
+            @media (max-width: 765px) {
+              position: relative;
+              margin: 0 auto;
+              text-align: center;
+            }
+
+            .header-search {
+              margin-left: 84px;
 
               @media (max-width: 992px) {
-                margin: 0px 24px;
+                margin-left: 50px;
               }
               @media (max-width: 789px) {
-                display: none;
+                margin-left: 30px;
+              }
+              @media (max-width: 765px) {
+                margin: 0;
+                padding-top: 10px;
+                width: 35px;
               }
             }
           }
         }
-      }
-
-      .header-search {
-        margin-left: 84px;
-
-        @media (max-width: 992px) {
-          margin-left: 60px;
-        }
-        @media (max-width: 789px) {
-          display: none;
+        ._active {
+          left: 0;
         }
       }
     }
