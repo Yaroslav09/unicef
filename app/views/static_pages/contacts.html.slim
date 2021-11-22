@@ -1,0 +1,19 @@
+section.contacts
+  .wrapper
+    .contacts-content
+      .header-contact
+        h2.title-contact
+          | Контакти
+        p.text-contact
+          | Якщо у вас є коментарі чи запитання, будь ласка, зв’яжіться з нами!
+        address.address-contact
+          h3.title-address
+            | Офіс Дитячого фонду ООН в Україні
+          p.address-address
+            | Адреса: 01021 м. Київ, вул. Інститутська, 28
+          p.address-phone
+            | Телефон:
+            = link_to " +380 44 339 93 75", "tel:#{+380443399375}", class: "cont"
+          p.address-mail
+            | Email:
+            = link_to " kiev@unicef.org", "mailto:#{+380443399375}", class: "cont"
